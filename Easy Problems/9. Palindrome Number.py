@@ -1,15 +1,7 @@
-digit =int(input())
-#conver digit into string 
-digit = str(digit)
-#reverse the digit
-digit = digit[::-1]
-#convert the digit into integer
-digit = int(digit)
-#compare the digit with the older one
-if digit == int(input()):
-    print("true")
-else:
-    print("false")
-
-
-
+#want to know if the number is a palindrome
+class Solution(object):
+    def isPalindrome(self, x):
+       x_str =str(x)
+       if x_str == x_str[::-1]:
+           return True
+           
